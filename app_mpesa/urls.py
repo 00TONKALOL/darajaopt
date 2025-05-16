@@ -20,6 +20,7 @@ from django.urls import path
 from gwijitrial import views
 
 urlpatterns = [
-    path('',views.home,name='home' ),
+    path('confirm/payment', views.confirm, name='confirm'),
+    path('', views.home, name='home'),
     path('admin/', admin.site.urls),
 ]
